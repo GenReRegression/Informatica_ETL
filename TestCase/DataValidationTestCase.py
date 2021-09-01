@@ -140,7 +140,7 @@ def comparedata(excelpath,wordfile):  # here we have created function as compare
                                     worksheet.cell(k + 1, 13).value = str(', '.join(mismatchcols))  # will give mismatch cols names
                                     worksheet.cell(k + 1, 14).value = resultfile  # for fail test cas, file path
                                     worksheet.cell(k + 1, 15).value = "Fail"  # test case status
-                                    worksheet.cell(k + 1, 16).value = "Mismatch data found"  # remark for fail test case as - 'no remark'
+                                    worksheet.cell(k + 1, 16).value = "Mismatch data between source and target"  # remark for fail test case as - 'no remark'
                                     workbook.save(excelpath)
                         else:
                             print("Data Validation " + str(
@@ -181,7 +181,7 @@ def comparedata(excelpath,wordfile):  # here we have created function as compare
                 worksheet.cell(i + 2, 14).value = "NA"
                 worksheet.cell(i + 2, 15).value = "No Run-Skipped"
                 worksheet.cell(i + 2, 16).value = "Test Case Execution Skipped"
-                print("Data Validation " + str(testcaseno) + "Test Case Execution Skipped....")
+                print("Data Validation Test Case " + str(testcaseno) + " Execution Skipped....")
                 workbook.save(excelpath)
         workbook.save(excelpath)
         print("@@@@@ Data Validation Test Case Execution Completed @@@@@")
