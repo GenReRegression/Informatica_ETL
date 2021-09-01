@@ -1,5 +1,7 @@
 # GenRe_Informatica_ETL
 
-For run code need updated test data file with quries in both scenarios like data validation and data duplicate count
+Details News to Run to Code:
 
-Update all username and password in file 
+For run code need updated test data file with quries in both scenarios sheet like data validation and data duplicate count
+
+Update all username and password in on text file and run Deco Algo file to generate encoded user credential file. 
