@@ -1,5 +1,4 @@
 import os
-from binhex import openrsrc
 from pathlib import Path
 
 
@@ -53,8 +52,10 @@ def generateencfile(filepath):
         finalpassword = encrypt(password, 9)
         datawriteinfile = servername+'-'+finaluser+'-'+finalpassword
         otfile.write(datawriteinfile)
+        print(finalpassword)
         otfile.close()
         print(datawriteinfile)
+        print("bshinde")
     inputfile.close()
     #os.rmdir(filepath)
 

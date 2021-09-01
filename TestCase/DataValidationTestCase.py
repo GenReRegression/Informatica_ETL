@@ -7,6 +7,7 @@ import openpyxl  #it is python library usd to read & write excel files
 from datetime import datetime  # to used date and time in py program
 import numpy as np  #it is used for multidimensional arrays(allows you to bind the import to the local variable name of your choice)
 from ConnectionInputs.GetCred import *  # Here we have taken .Getcredential file from ConnectionInput folder
+#bshinde
 
 def comparedata(excelpath,wordfile):  # here we have created function as comparedata, And parameter taken as textdata file & cred file
     cx_Oracle.init_oracle_client(lib_dir=r"C:\Oracle\instantclient_19_11")
